@@ -7,7 +7,7 @@ export default function TopBar({ onRun, running, mode, onSwitchMode }) {
     <div className="flex items-center gap-3 px-4 py-2 border-b border-gray-200 bg-white z-10 shadow-sm">
       {/* Logo */}
       <span className="text-sm font-bold tracking-tight text-gray-900 whitespace-nowrap">
-        ⬡ AgentForge
+        ⬡ AgentCraft
       </span>
 
       {/* Mode switcher */}

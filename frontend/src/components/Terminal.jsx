@@ -16,7 +16,7 @@ export default function Terminal({ logs }) {
           <span className="w-2.5 h-2.5 rounded-full bg-yellow-500" />
           <span className="w-2.5 h-2.5 rounded-full bg-green-500" />
         </div>
-        <span className="text-xs text-gray-500 font-mono">AgentForge — Output</span>
+        <span className="text-xs text-gray-500 font-mono">AgentCraft — Output</span>
       </div>
 
       {/* Log output */}

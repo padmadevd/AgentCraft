@@ -17,11 +17,11 @@ const wss = new WebSocketServer({ server: httpServer })
 
 wss.on('connection', (ws) => {
   eventStream.add(ws)
-  ws.send(JSON.stringify({ type: 'connected', message: 'AgentForge backend connected' }))
+  ws.send(JSON.stringify({ type: 'connected', message: 'AgentCraft backend connected' }))
 })
 
 httpServer.listen(config.port, () => {
-  logger.info(`AgentForge backend  →  http://localhost:${config.port}`)
+  logger.info(`AgentCraft backend  →  http://localhost:${config.port}`)
   logger.info(`WebSocket           →  ws://localhost:${config.port}`)
   logger.info(`Groq API key        →  ${config.groqApiKey ? '✓ configured' : '✗ MISSING — set GROQ_API_KEY in .env'}`)
 })

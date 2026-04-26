@@ -1,11 +1,11 @@
 ================================================================================
-AGENTFORGE — PROJECT SUMMARY
+AGENTCRAFT — PROJECT SUMMARY
 Last updated: Phase 3 complete
 ================================================================================
 
-WHAT IS AGENTFORGE?
+WHAT IS AGENTCRAFT?
 -------------------
-AgentForge is a Low-Code Multi-Agent Builder that lets users visually design and
+AgentCraft is a Low-Code Multi-Agent Builder that lets users visually design and
 run hierarchical AI agent workflows on a drag-and-drop canvas. It uses CrewAI for
 agent orchestration, Groq LLM (llama-3.3-70b-versatile) as the language model,
 ChromaDB for shared agent memory, and FastAPI + WebSockets for the backend API.

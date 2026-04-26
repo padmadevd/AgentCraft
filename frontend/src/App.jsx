@@ -39,7 +39,7 @@ export default function App() {
   const INITIAL_NODES = mode === 'quick' ? QUICK_NODES : CANVAS_NODES
   const EDGES = mode === 'quick' ? QUICK_EDGES : CANVAS_EDGES
   const [nodes, setNodes] = useState(QUICK_NODES)
-  const [logs, setLogs] = useState(['AgentForge ready. Enter a task and click Run Agents.'])
+  const [logs, setLogs] = useState(['AgentCraft ready. Enter a task and click Run Agents.'])
   const [running, setRunning] = useState(false)
   const [activeAgent, setActiveAgent] = useState(null)
   const [report, setReport] = useState(null)
@@ -59,7 +59,7 @@ export default function App() {
       ws = new WebSocket(backend.ws)
       wsRef.current = ws
 
-      ws.onopen = () => addLog(`🔌 Connected to AgentForge [${mode === 'quick' ? 'Quick Mode' : 'Canvas Mode'}]`)
+      ws.onopen = () => addLog(`🔌 Connected to AgentCraft [${mode === 'quick' ? 'Quick Mode' : 'Canvas Mode'}]`)
 
       ws.onmessage = (e) => {
         const msg = JSON.parse(e.data)
